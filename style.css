@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  :root {
+    --wid: 100vh;
+  }
+  .Box_1 {
+    width: var(--wid);
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left-main right-top right-top"
+      "left-main right-bottom right-bottom";
+  }
+  .item {
+    border: 1px solid grey;
+  }
+  .item1 {
+    grid-area: left-main;
+    background-image: url("https://i.pinimg.com/originals/e3/98/57/e39857c9cff6a34811b4a467334c008d.jpg");
+    background-size: cover;
+  }
+  
+  .item2 {
+    grid-area: right-top;
+    background-image: url("https://th.bing.com/th/id/R.7cbff13e8cfe1537da170a785b66b712?rik=QADgG6KXdRlXHA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fb%2ff%2fe%2f1446331-download-free-game-of-thrones-dragon-wallpaper-2700x1800-720p.jpg&ehk=vDA2crPdGROSubgj2vt9bX1kQEp2e9BLtetbgvSctG4%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+  }
+  
+  .item3 {
+    grid-area: right-bottom;
+    background-image: url("https://www.4kq.com.au/wp-content/uploads/sites/12/2019/07/GoT-1.jpg?crop=0,0,100,75&resize=2400,1350&quality=75");
+    background-size: cover;
+  }
+  
+  .Box_2 {
+    width: var(--wid);
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left-up left-up center-center right-up"
+      "left-down center-down center-down right-up";
+  }
+  
+  .item4 {
+    grid-area: left-up;
+    background-image: url("https://content.api.news/v3/images/bin/eb5a48e99fe12d2e84cd51d9da631785");
+    background-size: cover;
+  }
+  
+  .item5 {
+    grid-area: center-center;
+  
+    background-image: url("https://clipground.com/images/got-logo-5.jpg");
+    background-size: 100% auto;
+    background-position: center;
+  }
+  
+  .item6 {
+    grid-area: right-up;
+  
+    background-image: url("https://th.bing.com/th/id/OIP.p7SZw08q-XDAPFYYR_VzXQHaNK?rs=1&pid=ImgDetMain");
+    background-size: cover;
+  }
+  
+  .item7 {
+    grid-area: left-down;
+  
+    background-image: url("https://wallpaperset.com/w/full/1/a/8/523694.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .item8 {
+    grid-area: center-down;
+    background-image: url("https://assets.thehansindia.com/h-upload/2019/11/02/231779-4.jpg");
+    background-size: cover;
+  }
+  
